@@ -57,7 +57,7 @@ Respond with ONLY valid JSON in this exact format, nothing else:
 If multiple lines caused errors, list them all: {{"error_lines": [2, 5]}}"""
 
     response = client.chat.completions.create(
-        model="llama3-8b-8192",
+        model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
         temperature=0,
         max_tokens=100,
